@@ -1,1 +1,1 @@
-portfolio website dsigned for my ever lovin
+portfolio website designed for my ever lovin
