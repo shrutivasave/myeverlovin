@@ -3,7 +3,7 @@
 const { useState } = React;
 
 const StaticContact = () => (
-  <div className="fixed top-4 right-4 text-red-600 text-xs z-50 font-mono">
+  <div className="fixed top-2 left-0 right-0 text-red-600 text-xs z-50 font-mono overflow-hidden whitespace-nowrap">
     email: urmyeverlovin@gmail.com instagram: urmyeverlovin email: urmyeverlovin@gmail.com instagram: urmyeverlovin email: urmyeverlovin@gmail.com instagram: urmyeverlovin email: urmyeverlovin@gmail.com instagram: urmyeverlovin
   </div>
 );
@@ -25,7 +25,7 @@ const Navigation = ({ onNavigate, mobile = false }) => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
   const tabs = ['Artists', 'Shows', 'About'];
   
-  if (mobile) {
+/*   if (mobile) {
     return (
       <div className="relative">
         <button
@@ -53,7 +53,7 @@ const Navigation = ({ onNavigate, mobile = false }) => {
         )}
       </div>
     );
-  }
+  } */
 
   return (
     <div className="flex gap-8">

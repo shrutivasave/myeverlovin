@@ -13,7 +13,7 @@ const LandingPage = ({ onNavigate }) => (
       
       {/* Desktop Navigation */}
       <div className="hidden md:flex justify-center gap-8">
-        {['Artists', 'Shows', 'Taste', 'About'].map(tab => (
+        {['Artists', 'Shows', 'About'].map(tab => (
           <button
             key={tab}
             onClick={() => onNavigate(tab.toLowerCase())}
@@ -26,7 +26,7 @@ const LandingPage = ({ onNavigate }) => (
 
       {/* Mobile Navigation */}
       <div className="md:hidden flex flex-col gap-4">
-        {['Artists', 'Shows', 'Taste', 'About'].map(tab => (
+        {['Artists', 'Shows', 'About'].map(tab => (
           <button
             key={tab}
             onClick={() => onNavigate(tab.toLowerCase())}
