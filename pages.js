@@ -4,7 +4,11 @@ const LandingPage = ({ onNavigate }) => (
   <div className="min-h-screen flex items-center justify-center bg-white">
     <div className="text-center px-4">
       <div className="font-mono font-bold text-4xl md:text-5xl tracking-wider mb-12">
-        URMYEVERLOVIN
+        <img 
+        src={"assets/everlovin-logo.png"} 
+        alt="URMYEVERLOVIN" 
+        className="mx-auto"
+    />
       </div>
       
       {/* Desktop Navigation */}
@@ -184,22 +188,34 @@ const ShowsPage = ({ onNavigate, goToLanding }) => (
       <Logo onClick={goToLanding} className="mt-4" />
     </div>
 
-    {/* Shows - Single Column */}
-    <div className="p-6 md:p-12 max-w-4xl mx-auto">
-      <div className="space-y-12">
-        {showsData.map(show => (
-          <div key={show.id} className="group">
-            <img 
-              src={show.image} 
-              alt={show.title}
-              className="w-full aspect-video object-cover mb-4 grayscale group-hover:grayscale-0 transition-all"
-            />
-            <p className="font-mono text-sm md:text-base group-hover:text-red-600 transition-colors">
-              {show.title}
-            </p>
-          </div>
-        ))}
-      </div>
+    {/* Flyers Grid - Desktop (3 columns) */}
+    <div className="hidden md:grid grid-cols-3 gap-8 p-12">
+      {showsData.map(show => (
+        <div key={show.id} className="group">
+          <img 
+            src={show.image} 
+            alt={show.title}
+            className="w-full h-auto object-cover mb-3 grayscale group-hover:grayscale-0 transition-all"
+            style={{ aspectRatio: '6/8.5' }}
+          />
+          <p className="font-mono text-xs leading-relaxed">{show.title}</p>
+        </div>
+      ))}
+    </div>
+
+    {/* Flyers Grid - Mobile (2 columns) */}
+    <div className="md:hidden grid grid-cols-2 gap-6 p-6">
+      {showsData.map(show => (
+        <div key={show.id}>
+          <img 
+            src={show.image} 
+            alt={show.title}
+            className="w-full h-auto object-cover mb-2"
+            style={{ aspectRatio: '6/8.5' }}
+          />
+          <p className="font-mono text-xs leading-relaxed">{show.title}</p>
+        </div>
+      ))}
     </div>
   </div>
 );
@@ -271,35 +287,30 @@ const AboutPage = ({ onNavigate, goToLanding }) => (
       {/* Profile */}
       <div className="mb-12">
         <img 
-          src="https://images.unsplash.com/photo-1516450360452-9312f5e86fc7?w=600&h=600&fit=crop"
+          src="assets\zander.jpeg"
           alt="Profile"
-          className="w-full md:w-1/2 aspect-square object-cover mb-6 grayscale"
+          className="w-full md:w-1/2 aspect-square object-cover mb-6 "
         />
         
         <div className="font-mono text-sm space-y-6 mb-8">
           <p className="leading-relaxed">
-            Music promoter and artist manager based in Los Angeles. 15 years experience building careers 
-            and creating unforgettable live experiences. Passionate about discovering emerging talent and 
-            connecting artists with audiences worldwide.
-          </p>
-          <p className="leading-relaxed">
-            Specializing in indie, electronic, and experimental music. From intimate club shows to 
-            festival stages, I work with artists who push boundaries and refuse to compromise their vision.
+            everlovin' nyc is zach anderson. he's a gig promoter and artist manager living in brooklyn new york.
           </p>
         </div>
 
         <div className="space-y-2 font-mono text-sm mb-12">
-          <p>E: <a href="mailto:email@hf.com" className="text-red-600 hover:underline">email@hf.com</a></p>
-          <p>IG: <a href="https://instagram.com/jdl" target="_blank" rel="noopener noreferrer" className="text-red-600 hover:underline">jdl</a></p>
+          <p>E: <a href="mailto:urmyeverlovin@gmail.com" className="text-red-600 hover:underline">urmyeverlovin@gmail.com</a></p>
+          <p>IG: <a href="https://instagram.com/urmyeverlovin" target="_blank" rel="noopener noreferrer" className="text-red-600 hover:underline">urmyeverlovin</a></p>
         </div>
       </div>
 
-      {/* Additional Images */}
+      {/* Additional Images
       <div className="grid grid-cols-2 md:grid-cols-3 gap-6 mb-12">
-        <img src="https://images.unsplash.com/photo-1470229538611-16ba8c7ffbd7?w=400&h=400&fit=crop" alt="Show 1" className="w-full aspect-square object-cover grayscale" />
-        <img src="https://images.unsplash.com/photo-1459749411175-04bf5292ceea?w=400&h=400&fit=crop" alt="Show 2" className="w-full aspect-square object-cover grayscale" />
-        <img src="https://images.unsplash.com/photo-1524368535928-5b5e00ddc76b?w=400&h=400&fit=crop" alt="Show 3" className="w-full aspect-square object-cover grayscale" />
-      </div>
+        <img src="assets\aboutshow\sinema.jpg" alt="Show 1"  />
+        <img src="assets\aboutshow\patpiano.jpeg" alt="Show 2" />
+        <img src="assets\aboutshow\crowd.jpeg" alt="Show 3" />
+      </div>  */}
+
 
       {/* Venues */}
       <div>

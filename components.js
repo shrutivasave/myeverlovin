@@ -4,7 +4,7 @@ const { useState } = React;
 
 const StaticContact = () => (
   <div className="fixed top-4 right-4 text-red-600 text-xs z-50 font-mono">
-    email: aaa-@ighandle-telephonenumbere
+    email: urmyeverlovin@gmail.com instagram: urmyeverlovin email: urmyeverlovin@gmail.com instagram: urmyeverlovin email: urmyeverlovin@gmail.com instagram: urmyeverlovin email: urmyeverlovin@gmail.com instagram: urmyeverlovin
   </div>
 );
 
@@ -13,13 +13,17 @@ const Logo = ({ onClick, className = "" }) => (
     onClick={onClick}
     className={`font-mono font-bold text-2xl tracking-wider hover:text-red-600 transition-colors ${className}`}
   >
-    URMYEVERLOVIN
+    <img 
+      src={"assets/everlovin-logo.png"} 
+      alt="URMYEVERLOVIN" 
+      className="h-20 w-auto"
+    />
   </button>
 );
 
 const Navigation = ({ onNavigate, mobile = false }) => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
-  const tabs = ['Artists', 'Shows', 'Taste', 'About'];
+  const tabs = ['Artists', 'Shows', 'About'];
   
   if (mobile) {
     return (
