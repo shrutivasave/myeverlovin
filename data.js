@@ -129,5 +129,5 @@ const venues = [
   'Trans-Pecos',
   'The Broadway',
   'House Shows + DIY Spaces',
-  'anywhere else cool',
+  '+ anywhere else cool',
 ];
