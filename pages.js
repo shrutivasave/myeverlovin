@@ -72,7 +72,10 @@ const ArtistsPage = ({ selectedArtist, setSelectedArtist, onNavigate, goToLandin
             </a>
             <p className="font-mono text-sm leading-relaxed">{selectedArtist.bio}</p>
             <button 
-              onClick={() => setSelectedArtist(null)}
+              onClick={() => {
+                setSelectedArtist(null);
+                window.location.hash = 'artists';
+              }}
               className="mt-8 font-mono border border-black px-6 py-2 hover:bg-black hover:text-white transition-colors"
             >
               ← Back to Artists
@@ -105,7 +108,10 @@ const ArtistsPage = ({ selectedArtist, setSelectedArtist, onNavigate, goToLandin
           />
           <p className="font-mono text-sm leading-relaxed mb-6">{selectedArtist.bio}</p>
           <button 
-            onClick={() => setSelectedArtist(null)}
+            onClick={() => {
+              setSelectedArtist(null);
+              window.location.hash = 'artists';
+            }}
             className="font-mono border border-black px-6 py-2 hover:bg-black hover:text-white transition-colors"
           >
             ← Back
@@ -195,8 +201,7 @@ const ShowsPage = ({ onNavigate, goToLanding }) => (
           <img 
             src={show.image} 
             alt={show.title}
-            className="w-full h-auto object-cover mb-3 grayscale group-hover:grayscale-0 transition-all"
-            style={{ aspectRatio: '6/8.5' }}
+            className="w-full h-auto object-contain mb-3 grayscale group-hover:grayscale-0 transition-all"
           />
           <p className="font-mono text-xs leading-relaxed">{show.title}</p>
         </div>
@@ -206,12 +211,11 @@ const ShowsPage = ({ onNavigate, goToLanding }) => (
     {/* Flyers Grid - Mobile (2 columns) */}
     <div className="md:hidden grid grid-cols-2 gap-6 p-6">
       {showsData.map(show => (
-        <div key={show.id}>
+        <div key={show.id} className="group">
           <img 
             src={show.image} 
             alt={show.title}
-            className="w-full h-auto object-cover mb-2"
-            style={{ aspectRatio: '6/8.5' }}
+            className="w-full h-auto object-contain mb-2 grayscale group-hover:grayscale-0 transition-all"
           />
           <p className="font-mono text-xs leading-relaxed">{show.title}</p>
         </div>
@@ -220,51 +224,6 @@ const ShowsPage = ({ onNavigate, goToLanding }) => (
   </div>
 );
 
-const TastePage = ({ onNavigate, goToLanding }) => (
-  <div className="min-h-screen bg-white">
-    <StaticContact />
-    
-    {/* Header - Desktop */}
-    <div className="hidden md:flex justify-between items-center p-8 border-b border-black">
-      <Logo onClick={goToLanding} />
-      <Navigation onNavigate={onNavigate} />
-    </div>
-
-    {/* Header - Mobile */}
-    <div className="md:hidden p-6 border-b border-black">
-      <Navigation onNavigate={onNavigate} mobile />
-      <Logo onClick={goToLanding} className="mt-4" />
-    </div>
-
-    {/* Records Grid - Desktop (3 columns) */}
-    <div className="hidden md:grid grid-cols-3 gap-8 p-12">
-      {tasteData.map(record => (
-        <div key={record.id} className="group">
-          <img 
-            src={record.image} 
-            alt={record.album}
-            className="w-full aspect-square object-cover mb-3 grayscale group-hover:grayscale-0 transition-all"
-          />
-          <p className="font-mono text-xs leading-relaxed">{record.album}</p>
-        </div>
-      ))}
-    </div>
-
-    {/* Records Grid - Mobile (2 columns) */}
-    <div className="md:hidden grid grid-cols-2 gap-6 p-6">
-      {tasteData.map(record => (
-        <div key={record.id}>
-          <img 
-            src={record.image} 
-            alt={record.album}
-            className="w-full aspect-square object-cover mb-2"
-          />
-          <p className="font-mono text-xs leading-relaxed">{record.album}</p>
-        </div>
-      ))}
-    </div>
-  </div>
-);
 
 const AboutPage = ({ onNavigate, goToLanding }) => (
   <div className="min-h-screen bg-white">

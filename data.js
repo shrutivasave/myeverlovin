@@ -40,7 +40,7 @@ const showsData = [
   { 
     id: 3, 
     title: '', 
-    image: 'assets/show-flyers/3.JPEG?w=800&h=450&fit=pad', 
+    image: 'assets/show-flyers/3.JPG?w=800&h=450&fit=pad', 
     type: 'image' 
   },
   { 
@@ -94,7 +94,7 @@ const showsData = [
   {
     id: 12,
     title: '',
-    image: 'assets/show-flyers/12.JPG?w=800&h=450&fit=pad',
+    image: 'assets/show-flyers/12.JPEG?w=800&h=450&fit=pad',
     type: 'image'
   },  
 ];
