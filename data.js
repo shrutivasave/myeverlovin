@@ -128,6 +128,6 @@ const venues = [
   'Bowery Ballroom',
   'Trans-Pecos',
   'The Broadway',
-  'Arlene\'s Grocery',
   'House Shows + DIY Spaces',
+  'anywhere else cool',
 ];
