@@ -4,7 +4,7 @@ const { useState } = React;
 
 const StaticContact = () => (
   <div className="fixed top-2 left-0 right-0 text-red-600 text-xs z-50 font-mono overflow-hidden whitespace-nowrap">
-    email: urmyeverlovin@gmail.com ig: urmyeverlovin email: urmyeverlovin@gmail.com ig: urmyeverlovin email: urmyeverlovin@gmail.com ig: urmyeverlovin email: urmyeverlovin@gmail.com ig: urmyeverlovin
+    email: urmyeverlovin@gmail.com ig: urmyeverlovin email: urmyeverlovin@gmail.com ig: urmyeverlovin email: urmyeverlovin@gmail.com ig: urmyeverlovin email: urmyeverlovin@gmail.com ig: urmyeverlovin email: urmyeverlovin@gmail.com ig: urmyeverlovin
   </div>
 );
 

@@ -64,7 +64,7 @@ const showsData = [
   { 
     id: 7, 
     title: '', 
-    image: 'assets/show-flyers/7.JPG?fit=pad', 
+    image: 'assets/show-flyers/7.jpg?fit=pad', 
     type: 'image' 
   },
   {
