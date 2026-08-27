@@ -72,53 +72,59 @@ const showsData = [
   { 
     id: 5, 
     title: '', 
-    image: 'assets/show-flyers/4.PNG?w=800&h=450&fit=pad', 
+    image: 'assets/show-flyers/3.PNG?w=800&h=450&fit=pad', 
     type: 'image' 
   },
   { 
     id: 6, 
+    title: '', 
+    image: 'assets/show-flyers/4.PNG?w=800&h=450&fit=pad', 
+    type: 'image' 
+  },
+  { 
+    id: 7, 
     title: '',    
     image: 'assets/show-flyers/5.JPG?w=800&h=450&fit=pad',     
     type: 'image' 
   },
   {
-    id: 7,
+    id: 8,
     title: '',
     image: 'assets/show-flyers/6.JPG?w=800&h=450&fit=pad',
     type: 'image'
   },
   { 
-    id: 8, 
+    id: 9, 
     title: '', 
     image: 'assets/show-flyers/7.jpg?fit=pad', 
     type: 'image' 
   },
   {
-    id: 9,
+    id: 10,
     title: '',
     image: 'assets/show-flyers/8.JPG?w=800&h=450&fit=pad',
     type: 'image'
   },
   {
-    id: 10,
+    id: 11,
     title: '',
     image: 'assets/show-flyers/9.JPEG?w=800&h=450&fit=pad',
     type: 'image'
   },
   {
-    id: 11,
+    id: 12,
     title: '',
     image: 'assets/show-flyers/10.JPEG?w=800&h=450&fit=pad',
     type: 'image'
   },
   {
-    id: 12,
+    id: 13,
     title: '',
     image: 'assets/show-flyers/11.JPG?w=800&h=450&fit=pad',
     type: 'image'
   },
   {
-    id: 13,
+    id: 14,
     title: '',
     image: 'assets/show-flyers/12.JPEG?w=800&h=450&fit=pad',
     type: 'image'
