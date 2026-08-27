@@ -6,7 +6,11 @@ const artistsData = [
     name: 'cash only tony\'s', 
     image: 'assets/artist-cash-only-tonys.jpeg', 
     ig: '@cashonlytonys', 
-    bio: 'cash only tony\'s is a 7-piece screamo band from brooklyn new york. their spastic live shows and diy ethos have won the hearts of scenes across the country. they look forward to putting out new music and touring later on in 2026.'
+    bio: `cash only tony’s is a seven-piece band from new york city. the band features a distinctive, double-vocalist/triple-guitar lineup, reminiscent of seven- to ten-piece scene forefathers like pageninetynine and lovelostbutnotforgotten. the self-described “free spirit screamo” band’s songwriting draws on a wide range of emo and adjacent subgenres, including emoviolence, metalcore, and post-rock.
+
+cash only tony’s began as a two-piece in 2023, offering early cuts by lead songwriters declan solomon and annika haakonsen. their first songs together, focused on an acoustic, twee approach to emo music, are collected on the left hand exercise ep. subsequent releases include 2025’s demo—which introduced bassist evan lytle, second vocalist alex morales, and drummer zach galsky to the band—and the same year’s split, which added second guitarist danny evans to the lineup. their upcoming full-length fills out the lineup with a third guitarist, memphis lamont.
+
+cash only tony’s features members of olth, risk yo life, zachshots, the dallas cowboys, and a variety of other bands in the emerging new wave of nyc emo. they have toured across the country with bands including febuary, punxsutawney, and holidays in the united states, and shared the stage with i promised the world, skycamefalling, dripping, sleepytime trio, and frail. the band has worked with diy labels sex emo and mob records, both local to their scene in new york.`
   },
   { 
     id: 'name2', 
@@ -40,7 +44,7 @@ emond also performs under the moniker alain c. montgomery, which has seen a co-s
     name: 'dj funnypat', 
     image: 'assets/artist-funny-pat.jpeg', 
     ig: '@funny_pat_haha', 
-    bio: 'dj funny pat is a dj, is funny, and his name is pat. he plays shows, makes music, hosts a radio show, and is a true staple in the underground brooklyn music scene. he has new music coming out in 2026.' 
+    bio: `dj funnypat is a dj, is funny, and his name is pat. he plays shows, makes music, hosts a radio show, and is a true staple in the underground brooklyn music scene. his record funny peace came out in june 2026 and is a dizzying collection of modern electronic music. the record was mastered by nate amos of water from your eyes & this is lorelei.'`
   },
 ];
 
